@@ -1,11 +1,28 @@
-.btn_location{
+.btn_open_menu{
     position: fixed;
     bottom: 50%;
     right: 0;
-    background-color: black;
+    background-color: #000000;
     border-radius: 0;
+    color: #ffffff;
+    display: block;
 }
 
+.btn_open_menu:hover{
+  background-color: #ffffff;
+  
+}
+
+.icon_accessibility{
+  height: 2em;
+  width: 2em;
+  color: #ffffff;
+}
+
+.icon_accessibility:hover{
+  color: #000000;
+}
+/* ------------------------------------menu------------------------------------------- */
 /* background */
 .menu{
     position: fixed; /* Stay in place */
@@ -21,8 +38,10 @@
   
   /* Modal Content/Box */
   .menu-content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 25% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -30,15 +49,43 @@
   
   /* The Close Button */
   .close-menu{
-    color: #aaa;
+    color: #000000;
     float: right;
-    font-size: 28px;
+    font-size: 2em;
     font-weight: bold;
   }
   
   .close-menu:hover,
   .close-menu:focus {
-    color: black;
+    color: rgb(204, 21, 21);
     text-decoration: none;
     cursor: pointer;
   }
+/* ----------------------------------text size buttons--------------------------------------------- */
+  .btn-custom{
+    border-color: #000000;
+    border-radius: 0;
+    
+  }
+
+  .btn-custom:hover{
+    color: #ffffff;
+    
+  }
+
+  .btn-small-text{
+    font-size: medium;
+  }
+
+  .btn-medium-text{
+    font-size: large;
+  }
+
+  .btn-large-text{
+    font-size: larger;
+  }
+
+/* ------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------- */
+
