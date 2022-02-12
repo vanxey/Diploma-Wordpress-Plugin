@@ -4,24 +4,16 @@
     right: 0;
     background-color: #000000;
     border-radius: 0;
-    color: #ffffff;
-    display: block;
-}
-
-.btn_open_menu:hover{
-  background-color: #ffffff;
-  
+    height: 3.5em;
+    width: 3.5em;
 }
 
 .icon_accessibility{
-  height: 2em;
-  width: 2em;
+  height: 1.5em;
+  width: 1.5em;
   color: #ffffff;
 }
 
-.icon_accessibility:hover{
-  color: #000000;
-}
 /* ------------------------------------menu------------------------------------------- */
 /* background */
 .menu{
@@ -41,7 +33,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     background-color: #fefefe;
-    margin: 25% auto; /* 15% from the top and centered */
+    margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -83,6 +75,10 @@
 
   .btn-large-text{
     font-size: larger;
+  }
+
+  .btn-spacing{
+    margin: 2em;
   }
 
 /* ------------------------------------------------------------------------------- */
