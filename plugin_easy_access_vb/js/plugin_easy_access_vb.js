@@ -20,12 +20,33 @@ jQuery(document).ready(()=>{
     // css styling button hover
     jQuery('#btn_open_menu').mouseover(()=>{
         jQuery('#btn_open_menu').css('background-color', '#323a45')
-        // jQuery('#icon_accessibility').css('color', '#000000')
     })
 
     jQuery('#btn_open_menu').mouseout(()=>{
         jQuery('#btn_open_menu').css('background-color', '#000000')
-        jQuery('#icon_accessibility').css('color', '#ffffff')
     })
+
+    // css styling each select option
+    jQuery('#inp_select_font_family').click(()=>{
+        let font_families = ['bahnschrift', 'helvetica', 'arial', 'roboto']
+        font_families.map(font =>{
+            let id = 'font_family_' + font
+            return jQuery('#' + id).css('font-family', font)
+        })
+    })
+
+    //switch eventhandling
+    jQuery('#inp_switch_contrast').click(()=>{
+        if(jQuery('#inp_switch_contrast').prop('checked') == true) jQuery('#inp_switch_contrast_display').text('ON')
+        else jQuery('#inp_switch_contrast_display').text('OFF')
+    })
+
+    jQuery('#inp_switch_cursor').click(()=>{
+        if(jQuery('#inp_switch_cursor').prop('checked') == true) jQuery('#inp_switch_cursor_display').text('ON')
+        else jQuery('#inp_switch_cursor_display').text('OFF')
+    })
+
     
 })
+
+
